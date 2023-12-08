@@ -7,8 +7,6 @@ Dark green: #28b485
 
 */
 
-
-/* I did learn, it was simply the back stuff of css like specificity, cascading, BEM, 7 - 1 and other stuff that does not have code weight*/
 :root{
   --light-green: #7ed56f;
   --medium-green: #55c57a;
@@ -46,7 +44,7 @@ body{
   clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
 }
 
-.logo-box{
+.header__logo-box{
   position: absolute;
   top: 2rem;
   left: 2rem;
@@ -54,7 +52,7 @@ body{
 .logo{
   height: 3rem;
 }
-.header-heading{
+.header__heading{
   position: absolute;
   top: 40%;
   left: 50%;
@@ -67,14 +65,14 @@ body{
   margin-bottom: 1rem;
   backface-visibility: hidden;
 }
-.header-primary-main{
+.header-primary--main{
   display: block;
   font-size: 3.8rem;
   font-weight: 400;
   letter-spacing: 3rem;
   animation: slide-to-right 1s ease-out;
 }
-.header-primary-sub{
+.header-primary--sub{
   display: block;
   font-size: 1.5rem;
   font-weight: 700;
@@ -117,7 +115,7 @@ body{
   border-radius: 30rem;
 }
 
-.header-btn-container{
+.header__btn-container{
   position: relative;
   transition: all 0.2s;
   width: fit-content;
@@ -143,17 +141,17 @@ body{
   }
 }
 
-.header-btn-container:hover{
+.header__btn-container:hover{
   transform: translateY(-0.25rem);
   box-shadow: 0 0.6rem 1.2rem rgba(0, 0, 0, 0.311);
 }
 
-.header-btn-container:active{
+.header__btn-container:active{
   transform: translateY(-0.1rem);
   box-shadow: 0 0.3rem 0.6rem rgba(0, 0, 0, 0.305);
 }
 
-.header-btn{
+.header__btn{
   color: #777;
   text-align: center;
   text-decoration: inherit;
