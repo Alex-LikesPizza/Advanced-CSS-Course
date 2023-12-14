@@ -1,0 +1,44 @@
+@keyframes slide-to-right {
+  from{
+    transform: translateX(-50%);
+    opacity: 0.1;
+  }
+  75%{
+    transform: translateX(2%);
+  }
+  to{
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slide-to-left {
+  from{
+    transform: translateX(50%);
+    opacity: 0.1;
+  }
+  75%{
+    transform: translateX(-2%);
+  }
+  to{
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slide-to-top {
+  from{
+    transform: translateY(50%);
+    opacity: 0;
+  }
+
+  50%{
+    opacity: 1;
+  }
+  75%{
+    transform: translateY(-2%);
+  }
+  to{
+    transform: translateY(0);
+  }
+}

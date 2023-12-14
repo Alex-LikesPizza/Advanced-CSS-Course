@@ -1,0 +1,50 @@
+.header{
+  position: relative;
+  height: 95vh;
+  background-image: linear-gradient( 
+      to right bottom, 
+      rgba($color-primary-light, 0.8),
+      rgba($color-primary-dark, 0.8)
+    ), 
+    url("../img/hero.jpg");
+  background-size: cover;
+  background-position: top;
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+
+  &__logo-box{
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+  }
+  .logo{
+    height: 3rem;
+  }
+  &__heading{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  &__btn-container{
+      position: relative;
+    transition: all 0.2s;
+    width: fit-content;
+    margin: auto;
+    background-color: $color-white;
+    animation: slide-to-top 0.5s 0.5s ease-out backwards;
+  }
+  &__btn-container:hover{
+    transform: translateY(-0.25rem);
+    box-shadow: 0 0.6rem 1.2rem rgba($color-black, 0.311);
+  }
+  &__btn-container:active{
+    transform: translateY(-0.1rem);
+    box-shadow: 0 0.3rem 0.6rem rgba($color-black, 0.305);
+  }
+  &__btn{
+    color: $color-grey-dark;
+    text-align: center;
+    text-decoration: inherit;
+  }
+}
