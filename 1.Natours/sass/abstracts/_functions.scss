@@ -1,0 +1,3 @@
+@function calculateGrid($n, $of){
+  @return calc(#{$n} * ((100% - (#{$of} - 1) * #{$gutter-horizontal}) / #{$of}) + (#{$n} - 1) * #{$gutter-horizontal});
+}
