@@ -184,6 +184,35 @@ body {
   .feature-box:hover {
     transform: translateY(-1rem) scale(1.03); }
 
+.card {
+  perspective: 90rem;
+  -moz-perspective: 90rem;
+  position: relative;
+  height: 31rem; }
+  .card__side {
+    height: 31rem;
+    transition: all .6s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    backface-visibility: hidden;
+    border-radius: 3px;
+    box-shadow: 0 1rem 3.5rem rgba(0, 0, 0, 0.15); }
+    .card__side--back {
+      background-color: green;
+      transform: rotateY(180deg); }
+      .card__side--back-1 {
+        background-image: linear-gradient(to right bottom, #ffb900, #ff7730); }
+      .card__side--back-2 {
+        background-image: linear-gradient(to right bottom, #7ed56f, #28b485); }
+      .card__side--back-3 {
+        background-image: linear-gradient(to right bottom, #2998ff, #5643fa); }
+  .card:hover .card__side--front {
+    transform: rotateY(180deg); }
+  .card:hover .card__side--back {
+    transform: rotateY(0); }
+
 .header {
   position: relative;
   height: 95vh;
@@ -260,3 +289,8 @@ body {
   margin-top: -6.5rem; }
   .section-features > * {
     transform: skewY(7deg); }
+
+.section-tours {
+  background-color: #f7f7f7;
+  padding: 16rem 0 31rem;
+  margin-top: -6rem; }
