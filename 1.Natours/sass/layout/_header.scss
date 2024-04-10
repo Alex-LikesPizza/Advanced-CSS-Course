@@ -26,25 +26,4 @@
     transform: translate(-50%, -50%);
     text-align: center;
   }
-  &__btn-container{
-      position: relative;
-    transition: all 0.2s;
-    width: fit-content;
-    margin: auto;
-    background-color: $color-white;
-    animation: slide-to-top 0.5s 0.5s ease-out backwards;
-  }
-  &__btn-container:hover{
-    transform: translateY(-0.25rem);
-    box-shadow: 0 0.6rem 1.2rem rgba($color-black, 0.311);
-  }
-  &__btn-container:active{
-    transform: translateY(-0.1rem);
-    box-shadow: 0 0.3rem 0.6rem rgba($color-black, 0.305);
-  }
-  &__btn{
-    color: $color-grey-dark;
-    text-align: center;
-    text-decoration: inherit;
-  }
 }
