@@ -9,13 +9,10 @@
   font-size: $default-font-size;
   transform: skewX(-12deg);
 
-  & > *{
-    transform: skewX(-12deg) translate();    
-  }
 
   &__shape{
-    width: 12rem;
-    height: 12rem;
+    width: 10rem;
+    height: 10rem;
     float: left;
     shape-outside: circle(50% at 50% 50%); // needs width, height and float to work
     clip-path: circle(50% at 50% 50%);
